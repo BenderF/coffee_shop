@@ -6,10 +6,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
-
-        Drink drink = new Drink();
-        Coffee coffee = new Coffee();
         DrinkFactory createDrink = new DrinkFactory();
 
         Scanner sc = new Scanner(System.in);
@@ -31,7 +27,6 @@ public class Main {
         createDrink.selectSize(sc.nextInt());
 
         createDrink.moreAdditional();
-
 
         sc.close();
 
